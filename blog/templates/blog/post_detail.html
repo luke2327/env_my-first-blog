@@ -2,12 +2,17 @@
 
 {% block content %}
     <div class="post">
-        {% if post.published_date %}
+        <!-- {% if post.published_date %}
             <div class="date">
-                {{ post.published_date }}
+                {{ post.published_date }}<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
             </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
+        {% endif %} -->
+        <!-- <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a> -->
+        <h1 style="display:inline-block;">{{ post.title }}</h1>        {% if post.published_date %}
+                    <div class="date" style="margin-left: 20%">
+                        {{ post.published_date }}<a style="margin-left: 15px;" class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+                    </div>
+                {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
