@@ -26,7 +26,9 @@ h1, h2, h3, h4 {
     color: #828282;
     display: inline-block;
     position: relative;
-    bottom: 6px;
+    /* bottom: 6px; */
+    float: right;
+    top: 30px;
 }
 
 .save {
