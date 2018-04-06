@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name='viewport' content='width=device-width,minimum-scale=0.maximum-scale=1.0'>
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Luke's 2327 Elementary Blog">
+        <meta property="og:title" content="Luke2327's Elementary Blog">
         <meta property="og:url" content="http://luke2327.pythonanywhere.com">
         <meta property="og:description" content="My first Elementary Blog by Luke2327, You want add post please call Luke2327">
         <meta property="og:image" content="https://cafeptthumb-phinf.pstatic.net/MjAxODAzMTNfOTYg/MDAxNTIwOTAwMDg0MjU5.gSjtPnE2tOetIKIrGSg3jOr1JxNxA7taT5woCEG2ix8g.q37Zc8-z40fiHcrP30OA5OpFrc8VTgLsyrIvD7iEpy8g.PNG.bequeath0307/4th_final.png?type=w740">
@@ -15,6 +15,17 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+          var deviceType = String(navigator.userAgent ).toLowerCase();
+          if(/iphone|ipad/.test(deviceType)){
+              $(function(){
+                  $(".content").css('margin-left', '4px');
+                  $(".add_btn").css('padding-right', '0px');
+                  $(".page-header").css('padding', '20px');
+              });
+          }
+      </script>
     </head>
     <body>
         <div class="page-header">
