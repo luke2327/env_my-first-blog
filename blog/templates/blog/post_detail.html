@@ -8,7 +8,8 @@
             </div>
         {% endif %} -->
         <!-- <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a> -->
-        <h1 id="title_detail" style="display:inline-block;">{{ post.title }}</h1>        {% if post.published_date %}
+        <h1 id="title_detail" style="display:inline-block;">{{ post.title }}</h1>
+                {% if post.published_date %}
                     <div class="date" style="margin-left: 20%">
                         {{ post.published_date }}<a style="margin-left: 15px;" class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
                     </div>
